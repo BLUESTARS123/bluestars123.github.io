@@ -172,9 +172,9 @@
     }
 
     disqusjs = new DisqusJS({
-      shortname: '',
+      shortname: 'bluestars123',
       title: 'test',
-      apikey: '',
+      apikey: '2F37TFTq6ZmQ6PE4r81XO7TYNYBecVpvvsoURufInKL1EbsiQH6dfRoNvRllll8k',
       ...dqOption,
       identifier: isShuoshuo ? path : (dqOption && dqOption.identifier) || '/2025/06/10/test/',
       url: isShuoshuo ? location.origin + path : (dqOption && dqOption.url) || 'https://bluestars123.github.io/2025/06/10/test/'
@@ -201,7 +201,7 @@
       if (!eleGroup) return
       const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
 
-      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=&api_key=&thread:link=${cleanedLinks}`,{
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=bluestars123&api_key=2F37TFTq6ZmQ6PE4r81XO7TYNYBecVpvvsoURufInKL1EbsiQH6dfRoNvRllll8k&thread:link=${cleanedLinks}`,{
         method: 'GET'
       })
       const result = await res.json()
